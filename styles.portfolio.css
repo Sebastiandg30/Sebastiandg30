@@ -12,25 +12,12 @@
     padding: 0;
     background-color: transparent; /* or set to your desired background */
   }
-  .hamburger-menu {
-    display: none; /* Hidden by default */
-    cursor: pointer;
-    padding: 15px;
-}
-
-.hamburger-menu .line {
-    width: 30px;
-    height: 3px;
-    background-color: #333; /* Adjust color as needed */
-    margin: 5px 0;
-    transition: all 0.3s ease;
-}
   .hvr-sweep-to-right {
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 1px rgba(20, 19, 19, 0);
     position: relative;
     -webkit-transition-property: color;
     transition-property: color;
@@ -729,7 +716,7 @@ i {
   @media screen and (min-width: 410px) and (max-width: 420px){
 
   .row, .navbar, .footer {   
-    flex-direction: column;
+    display: block;
   }
   .about-me{
     font-size: 40px;
@@ -781,7 +768,7 @@ width: fit-content;
       margin: auto;
       font-size: 0.8rem;
     }
-    .row, .navbar, .footer {   
+    .row, .navbar{   
       flex-direction: column;
     }
     .about-me{
@@ -859,39 +846,16 @@ width: fit-content;
     }
   }
   @media screen and (max-width: 768px) {
-    .hamburger-menu {
-      display: block;
-  }
 
   /* Hide the regular navigation menu */
   .navbar {
-      display: none;
-      position: absolute;
-      background-color: #fff; /* Adjust color as needed */
-      width: 100%;
-      top: 60px; /* Adjust based on the height of the hamburger menu */
-      left: 0;
-  }
+    flex-direction: column;
 
-  /* Show the navbar when it's active (toggled by JS) */
-  .navbar.active {
-      display: block;
   }
-
-    article{
-      top: 10px;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-    }
-    .tech-item{
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-      font-size: 0.8rem;
-    }
+  .navbar a { 
+    border-radius: 50%;
+    border-color: #000;
+  }
 
     .about-me{
       font-size: 25px;
