@@ -196,7 +196,7 @@ span:not(h1 span)  {
   border-radius: 100%;
   filter: blur(20px);
   position: absolute;
-  bottom: -80%;
+  bottom: -20%;
   transition: all 0.2s ease;
 }
 
