@@ -196,7 +196,7 @@ span:not(h1 span)  {
   border-radius: 100%;
   filter: blur(20px);
   position: absolute;
-  bottom: -50%;
+  bottom: -80%;
   transition: all 0.2s ease;
 }
 
@@ -305,11 +305,12 @@ span:not(h1 span)  {
   nav > :not(.sitename, .material-icons) {
     display: none;
   }
-  
   nav {
     justify-content: space-between;
   }
-  
+  span:not(h1 span){
+    display: none;
+  }
   .material-icons {
     display: flex;
     align-items: center;
@@ -317,7 +318,6 @@ span:not(h1 span)  {
   button{
     margin-top: 80px;
   }
- 
   .highlight{
 font-size: 1.5rem;
   }
