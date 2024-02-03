@@ -623,8 +623,18 @@ i {
 .navbar a.icon {
  display: none;
 }
-
+.port-title{
+  display: none;
+position: absolute;
+color: white;
+font-size: 2em;
+margin-top: 12px;
+margin-left: 15px;
+}
 @media screen and (max-width: 600px) {
+  .port-title{
+    display: block;
+  }
   .navbar{
     background-color: #111;
     padding: 20px;
@@ -675,6 +685,9 @@ i {
   .navbar.responsive {
     position: relative;
     gap: 40px;
+    .port-title{
+      display: none;
+    }
   }
   .navbar.responsive a.icon {
     background-color: transparent;
